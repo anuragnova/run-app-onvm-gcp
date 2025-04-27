@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.about-section {
+    padding: 3rem 2rem;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 10px;
+    max-width: 1500px;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+
+    /* background: hsla(217, 89%, 61%, 1);
+    background: linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4285F4", endColorstr="#DB4437", GradientType=1 ); */
+        
+  }
+
+  .about-section:hover h2,
+  .about-section:hover p {
+      color: #ffffff; /* Change text color to white on hover */
+     
+  }
+
+  .about-section:hover {
+    /* transform: translateY(-5px);  Slight lift on hover */ 
+    background: hsla(217, 89%, 61%, 1);
+    background: linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(217, 89%, 61%, 1) 0%, hsla(5, 69%, 54%, 1) 35%, hsla(44, 100%, 48%, 1) 66%, hsla(151, 83%, 34%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4285F4", endColorstr="#DB4437", GradientType=1 );
+    transition: background 1s ease-in-out, color 1s ease-in-out; 
+  }
+  
+  .about-section h2 {
+    font-size: 3rem;
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about-section p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    
+    
+    font-family: "Charis SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    transition: color 0.3s ease-in-out;
+  }

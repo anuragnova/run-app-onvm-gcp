@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* Team Slider Section */
 .team-slider-section {
     display: flex;
@@ -10,6 +13,10 @@
     position: relative;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .team-slider-section:hover{
+    background-color: #BDD9E9;
   }
   
   /* Slider Container */
@@ -31,7 +38,7 @@
     justify-content: space-between;
     width: 80%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    
     border-radius: 20px;
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
     padding: 2rem;
@@ -45,24 +52,49 @@
   }
   
   .slide-content h3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #293241;
+
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
   }
   
   .slide-content p {
-    font-size: 1.5rem;
-    color: #cccccc;
+    font-size: 2rem;
+    color: #550b04;
+
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .slide-content span {
+    font-size: 1rem;
+    color: #000000;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    text-align: justify;
   }
   
   .slide-image {
-    width: 300px; /* Explicit width */
-    height: 300px; /* Explicit height */
+    width: 500px; /* Explicit width */
+    height: 500px; /* Explicit height */
     border-radius: 50%; /* Makes it circular */
     object-fit: cover; /* Ensures the image covers the circular area */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for aesthetics */
     /* padding-right: ; */
   }
+
+  
   
 /* Arrows */
 .arrow {

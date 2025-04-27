@@ -1,0 +1,82 @@
+/* General Section Styling */
+.contact-form-section {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+  position: relative; /* Positioning for hover effect */
+  overflow: hidden; /* Prevents content overflow */
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form-section h2 {
+  font-size: 2.5rem;
+  color: #0F9D58;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Form Styling */
+.contact-form-section form {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-form-section form label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form-section form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form-section form button {
+  padding: 0.75rem 2rem;
+  background-color: #0F9D58;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form-section form button:hover {
+  background-color: #0d7d46;
+}
+
+/* Hover Effect: Show Under Construction */
+.contact-form-section:hover {
+  background-color: #fff3cd; /* Light yellow background */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Emphasized shadow */
+}
+
+.contact-form-section:hover h2,
+.contact-form-section:hover form {
+  opacity: 0; /* Hide form and heading */
+}
+
+.contact-form-section:hover::before {
+  content: "🚧 Under Construction 🚧";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #856404;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  z-index: 1;
+}

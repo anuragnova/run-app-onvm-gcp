@@ -1,0 +1,123 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+.future-plans-section {
+  padding: 2rem;
+  background-color: #e8f5e9;
+  text-align: center;
+}
+
+.future-plans-section h2 {
+  font-size: 2.5rem;
+  color: #0F9D58;
+  margin-bottom: 2rem;
+
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  justify-content: center;
+  gap: 1.5rem; /* Add space between the boxes */
+}
+
+.plan-box {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e8f5e9; /* Set text color */
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; /* For overlay positioning */
+  overflow: hidden; /* To ensure overlay doesn't spill out */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  z-index: 2; /* Ensure the text is above the overlay */
+  color: #e8f5e9; /* Set text color */
+  font-family: "Special Elite", system-ui; /* Apply Special Elite font */
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+.plan-box p {
+  font-size: 1.12rem;
+  text-align: center;
+  line-height: 1.5;
+  z-index: 2; /* Ensure the text is above the overlay */
+  color: #e8f5e9; /* Set text color */
+  font-family: "Oswald", sans-serif; /* Apply Oswald font */
+  font-optical-sizing: auto;
+  font-weight: 300; /* Use a light weight */
+  font-style: normal;
+}
+
+/* Add a semi-transparent overlay to ensure text visibility */
+.plan-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 1; /* Place the overlay below the text */
+  transition: background 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect: Zoom in the background image */
+.plan-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  background-size: 120%; /* Zoom in the image on hover */
+}
+
+.plan-box:hover::before {
+  background: rgba(0, 0, 0, 0.6); /* Darken overlay on hover for better contrast */
+}
+
+/* Different Background Images for Each Box */
+.plan-box-1 {
+  background-image: url('unsplash1.jpg'); /* Replace with actual image path */
+}
+
+.plan-box-2 {
+  background-image: url('unsplash2.jpg'); /* Replace with actual image path */
+}
+
+.plan-box-3 {
+  background-image: url('unsplash3.jpg'); /* Replace with actual image path */
+}
+
+.plan-box-4 {
+  background-image: url('unsplash4.jpg'); /* Replace with actual image path */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    align-items: center;
+  }
+
+  .plan-box {
+    width: 90%; /* Make the boxes take up most of the screen width */
+    height: auto; /* Adjust height for content */
+  }
+}

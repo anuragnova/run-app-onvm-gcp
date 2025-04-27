@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import About from './pages/About';
-import TeamSlider from './pages/TeamSlider';
-import FuturePlans from './pages/FuturePlans';
-import ContactForm from './pages/ContactForm';
+import About from './pages/about/About';
+import TeamSlider from './pages/teamSlider/TeamSlider';
+import FuturePlans from './pages/futurePlan/FuturePlans';
+import ContactForm from './pages/contact/ContactForm';
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <TeamSlider />
           <FuturePlans />
           <ContactForm />
+          <Footer />
         </main>
       </div>
     </Router>
