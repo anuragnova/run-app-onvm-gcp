@@ -80,3 +80,23 @@
   text-align: center;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .contact-form-section form {
+    flex-direction: column;
+  }
+
+  .contact-form-section form label {
+    font-size: 1rem;
+  }
+
+  .contact-form-section form input {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

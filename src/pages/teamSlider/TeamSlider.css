@@ -128,17 +128,35 @@
     right: 0; /* Move to the extreme right */
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
-    .slide-content h3 {
-      font-size: 2rem;
-    }
-  
-    .slide-content p {
-      font-size: 1.2rem;
-    }
-  
-    .slide-image {
-      max-width: 70%;
-    }
+  .team-slider-section {
+    flex-direction: column;
+    padding: 1rem;
   }
+
+  .slide-image {
+    width: 100px; /* Smaller image size */
+    height: 100px; /* Smaller image size */
+  }
+
+  .slide-content {
+    text-align: center; /* Center content */
+  }
+
+  .arrow {
+    display: none; /* Hide arrows on smaller screens */
+  }
+
+  .slide-content h3 {
+    font-size: 1rem; /* Smaller heading size */
+  }
+
+  .slide-content p {
+    font-size: 0.5rem; /* Smaller paragraph size */
+  }
+
+
+  .slide-content span {
+    font-size: 0.55rem; /* Smaller span size */
+  }
+}
