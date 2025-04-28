@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar section">
       <div className="navbar-left">
-        <img src="\NOVA-final.png" alt="Project Nova Logo" className="navbar-logo" />
+        <img src="https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/nova.png" alt="Project Nova Logo" className="navbar-logo" />
         <h1>Project Nova</h1>
       </div>
       <div className="navbar-right">
