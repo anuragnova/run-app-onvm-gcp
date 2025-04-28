@@ -2,16 +2,26 @@ import React, { useState, useEffect } from 'react';
 import './TeamSlider.css';
 
 const teamMembers = [
-  { name: 'Himanshu Tiwary', role: 'Cloud Architect', image: "https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/himanshu.jpg", 
-    description : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." },
-  {name: 'Lavanya Lanka', role: 'Cloud Architect', image: 'https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/lavanya.jpg',
-    description : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  { name: 'Himanshu Tiwary', role: 'Cloud Network Engineer', image: "https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/himanshu.jpg", 
+    description : `Himanshu architects and deploys the essential networking foundation in the cloud, ensuring seamless connectivity for all services. 
+    He establishes secure network pathways and implements controls to protect cloud resources. His work guarantees high availability and optimal performance of the cloud environment. 
+    By automating network configurations, he streamlines deployments and reduces manual effort. Ultimately, Himanshu contributes a stable, secure, and efficient network infrastructure for the organization's cloud presence.` },
+  {name: 'Lavanya Lanka', role: 'Cloud Database Engineer', image: 'https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/lavanya.jpg',
+    description : `Lavanya designs and manages the critical data storage and retrieval systems in the cloud, ensuring data integrity and accessibility. 
+    She selects and optimizes database technologies to meet application needs and performance goals. Her focus on security and high availability safeguards valuable data assets.
+     Through performance tuning and efficient database management, she enables applications to operate smoothly and reliably. Lavanya contributes a robust and performant data layer that powers cloud applications.`
    },
-  { name: 'Anurag Kumar', role: 'Developer', image: 'https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/anurag.jpg',
-    description : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  { name: 'Anurag Kumar', role: 'Cloud DevOps Engineer', image: 'https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/anurag.jpg',
+    description : `Anurag automates and streamlines the software delivery process in the cloud, from development to deployment. 
+    He builds and maintains CI/CD pipelines for rapid and reliable application releases. By implementing Infrastructure-as-Code,
+     he ensures consistent and scalable cloud environments. His work in monitoring and automation enhances system stability and operational efficiency. 
+     Anurag contributes to faster delivery cycles, improved reliability, and efficient cloud operations.`
    },
-  { name: 'Dhiraj Kumar Prince', role: 'Developer', image: 'https://images.unsplash.com/photo-1581094726787-a136735f018d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    description : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  { name: 'Dhiraj Kumar Prince', role: 'Cloud Storage Engineer', image: '',
+    description : `Dhiraj architects and manages the cloud storage infrastructure, ensuring data is securely stored, 
+    highly available, and cost-effectively managed. He implements data protection strategies, including backups and disaster recovery. 
+    His expertise in selecting and configuring storage services optimizes performance and scalability for various data needs. 
+    By managing data lifecycles and implementing automation, he contributes to efficient and reliable data storage solutions in the cloud.`
    },
 ];
 
