@@ -6,7 +6,7 @@ body {
   color: #333;*/
   line-height: 1.6;
   background-color: #f9f9f9; /* A light gray background for contrast */
-  background-image: radial-gradient(circle, rgb(218, 218, 218) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgb(228, 228, 228) 1px, transparent 1px);
   background-size: 20px 20px; /* Adjust the spacing of the dots here */
 
 }

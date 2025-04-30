@@ -12,11 +12,25 @@ const Navbar = () => {
     <nav className="navbar section">
       <div className="navbar-left">
         <img
-          src="https://storage.googleapis.com/sample-bucket-for-nova/profile-picture/nova.png"
+          src="https://storage.googleapis.com/sample-bucket-for-nova/website-images/nova.png"
           alt="Project Nova Logo"
           className="navbar-logo"
         />
-        <h1>Project Nova</h1>
+        <div className="navbar-title">
+          <h1>NOVA</h1>
+          <p>
+            Igniting Transformation through{' '}
+            <span className="google-colored">
+              <span>G</span>
+              <span>o</span>
+              <span>o</span>
+              <span>g</span>
+              <span>l</span>
+              <span>e</span>
+            </span>{' '}
+            Cloud
+          </p>
+        </div>
       </div>
       <button className="hamburger" onClick={toggleMenu}>
         &#9776; {/* Hamburger icon */}
